@@ -21,8 +21,9 @@ This project was a collaborative effort, with each contributor responsible for d
 - Initial Pipex Implementation (Fully Implemented): Provided the foundational code for pipe handling.
 - Prompt (Fully Implemented): Displays a customizable shell prompt.
 - Built-in Commands: echo, cd, pwd, export, unset, env, exit
-- Signals: Implements signal handling (e.g., Ctrl+C, Ctrl+\) to manage shell behavior.
-- Error Handling: Provides appropriate error messages for invalid commands or incorrect usage.
+- Signals (Collaboration): Implements signal handling (e.g., Ctrl+C, Ctrl+\) to manage shell behavior.
+- Error Handling (Partially Implemented): Provides appropriate error messages for invalid commands or incorrect usage.
+- Heredoc (Collaboration): Includes partial functionality for heredoc (<<).
 
 
 ## Compilation
