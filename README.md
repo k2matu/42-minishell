@@ -11,15 +11,15 @@ This project was a collaborative effort, with each contributor responsible for d
 - Command Execution (Fully Implemented): Executes system commands, handling both relative and absolute paths.
 - Pipes (Fully Implemented): Implements piping (|), enabling the chaining of commands.
 - Redirection (Fully Implemented): Handles input (<), output (>), and append (>>) redirection.
-- Heredoc (Partially Implemented): Includes partial functionality for heredoc (<<).
-- Signal Handling (Partially Implemented): Basic signal handling (e.g., Ctrl+C and Ctrl+\).
+- Environment Variables (Fully Implemented): Manages environment variables like $HOME and $USER.
+- Heredoc (Collaboration): Includes partial functionality for heredoc (<<).
+- Signal Handling (Collaboration): Basic signal handling (e.g., Ctrl+C and Ctrl+\).
 - Error Handling (Partially Implemented): Provides error management for invalid commands and syntax, with some areas still under development.
-- Environment Variables: Manages environment variables like $HOME and $USER.
 - Built-ins (Improved): Fixed edge cases for built-in commands (echo, cd, pwd, export, unset, env, exit).
 
 ### Parts Handled by partner:
 - Initial Pipex Implementation: Provided the foundational code for pipe handling.
-- Prompt: Displays a customizable shell prompt.
+- Prompt (Fully Implemented): Displays a customizable shell prompt.
 - Built-in Commands: echo, cd, pwd, export, unset, env, exit
 - Signals: Implements signal handling (e.g., Ctrl+C, Ctrl+\) to manage shell behavior.
 - Error Handling: Provides appropriate error messages for invalid commands or incorrect usage.
