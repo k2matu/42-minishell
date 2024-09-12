@@ -15,10 +15,10 @@ This project was a collaborative effort, with each contributor responsible for d
 - Heredoc (Collaboration): Includes partial functionality for heredoc (<<).
 - Signal Handling (Collaboration): Basic signal handling (e.g., Ctrl+C and Ctrl+\).
 - Error Handling (Partially Implemented): Provides error management for invalid commands and syntax, with some areas still under development.
-- Built-ins (Improved): Fixed edge cases for built-in commands (echo, cd, pwd, export, unset, env, exit).
+- Built-in Commands (Improved): Fixed edge cases for built-in commands (echo, cd, pwd, export, unset, env, exit).
 
 ### Parts Handled by partner:
-- Initial Pipex Implementation: Provided the foundational code for pipe handling.
+- Initial Pipex Implementation (Fully Implemented): Provided the foundational code for pipe handling.
 - Prompt (Fully Implemented): Displays a customizable shell prompt.
 - Built-in Commands: echo, cd, pwd, export, unset, env, exit
 - Signals: Implements signal handling (e.g., Ctrl+C, Ctrl+\) to manage shell behavior.
