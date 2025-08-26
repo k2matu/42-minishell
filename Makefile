@@ -3,20 +3,36 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: kmatjuhi <kmatjuhi@student.hive.fi>        +#+  +:+       +#+         #
+#    By: kale <kale@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 10:19:34 by emichels          #+#    #+#              #
-#    Updated: 2024/08/08 23:00:38 by kmatjuhi         ###   ########.fr        #
+#    Updated: 2025/08/26 11:30:57 by kale             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-
 
 NAME	:= minishell
 CC		:= gcc -g
 CFLAGS	:= -Wextra -Wall -Werror
 HEADERS	:= -I./builtins/
-LIBS	:= -Llibft -lft -lreadline
+
+UNAME_S := $(shell uname -s)
+ARCH := $(shell uname -m)
+
+ifeq ($(UNAME_S),Darwin)
+    ifeq ($(ARCH),arm64)
+        # macOS Apple Silicon (ARM64)
+        READLINE_DIR := /opt/homebrew/opt/readline
+    else
+        # macOS Intel
+        READLINE_DIR := /usr/local/opt/readline
+    endif
+    CFLAGS += -I$(READLINE_DIR)/include
+    LIBS := -Llibft -lft -L$(READLINE_DIR)/lib -lreadline
+else
+    # Linux
+    LIBS := -Llibft -lft -lreadline
+endif
+
 SRCS	:=	main.c \
 			exec/child.c \
 			exec/exec_error.c \
@@ -73,6 +89,6 @@ fclean: clean
 	@rm -rf $(NAME)
 	@make fclean -C libft
 
-re: clean all
+re: fclean all
 
 .PHONY: all, clean, fclean, re
