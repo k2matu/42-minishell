@@ -1,6 +1,6 @@
 # Minishell
 
-Minishell is a mini version of a Unix shell, created as a school project with Bash as the reference shell. The goal of this project is to implement essential features of a shell environment from scratch, deepening our understanding of process creation, signal handling, and command execution.
+Minishell is a mini version of a **Unix shell**, created as a school project with **Bash** as the reference shell. The goal of this project is to implement essential features of a shell environment from scratch, deepening our understanding of process creation, signal handling, and command execution.
 
 This project was a collaborative effort, with each contributor responsible for different aspects of the shell.
 
