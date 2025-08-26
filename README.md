@@ -1,4 +1,3 @@
-
 # Minishell
 
 Minishell is a mini version of a Unix shell, created as a school project with Bash as the reference shell. The goal of this project is to implement essential features of a shell environment from scratch, deepening our understanding of process creation, signal handling, and command execution.
@@ -29,7 +28,7 @@ This project was a collaborative effort, with each contributor responsible for d
 ## Compilation
 1. Clone the repository:
 ```
-git clone git@github.com:k2matu/minishell.git
+git clone git@github.com:k2matu/42-minishell.git minishell
 ````
 2. Navigate into the directory:
 ```
